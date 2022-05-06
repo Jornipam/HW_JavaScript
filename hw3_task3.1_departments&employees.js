@@ -58,28 +58,32 @@ const enterprises = [
   ]
   
 
-  // for (let i =0; i < enterprises.length; i++ ) {
-    
-  //   console.log(enterprises[i].name)
-  //   console.log(enterprises[i].departments[i].name)
-  // }
-  var employees1= enterprises[0].departments[0].employees_count,
-  employees2= enterprises[0].departments[1].employees_count,
-  employees3= enterprises[0].departments[2].employees_count,
-  employees4= enterprises[1].departments[0].employees_count,
-  employees5= enterprises[1].departments[1].employees_count,
-  employees6= enterprises[1].departments[2].employees_count,
-  employees7= enterprises[2].departments[0].employees_count;
 
-  console.log(enterprises[0].name + ": " + (employees1+employees2+employees3) + " сотрудников" )
-  console.log(" - " + enterprises[0].departments[0].name + ": " + employees1 + " сотрудников")
-  console.log(" - " + enterprises[0].departments[1].name + ": " + employees2 + " сотрудников")
-  console.log(" - " + enterprises[0].departments[2].name + ": " + employees3 + " сотрудников")
-  console.log(enterprises[1].name + ": " + (employees4+employees5+employees6) + " сотрудников")
-  console.log(" - " + enterprises[1].departments[0].name + ": " + employees4 + " сотрудников")
-  console.log(" - " + enterprises[1].departments[1].name + ": " + employees5 + " сотрудников")
-  console.log(" - " + enterprises[1].departments[2].name + ": " + employees6 + " сотрудников")
-  console.log(enterprises[2].name + ": " + (employees7) + "сотрудников")
-  console.log(" - " + enterprises[2].departments[0].name + ": " + employees7 + " сотрудников")
+  // var employees1= enterprises[0].departments[0].employees_count,
+  // employees2= enterprises[0].departments[1].employees_count,
+  // employees3= enterprises[0].departments[2].employees_count,
+  // employees4= enterprises[1].departments[0].employees_count,
+  // employees5= enterprises[1].departments[1].employees_count,
+  // employees6= enterprises[1].departments[2].employees_count,
+  // employees7= enterprises[2].departments[0].employees_count;
 
- 
+  // console.log(enterprises[0].name + ": " + (employees1+employees2+employees3) + " сотрудников" )
+  // console.log(" - " + enterprises[0].departments[0].name + ": " + employees1 + " сотрудников")
+  // console.log(" - " + enterprises[0].departments[1].name + ": " + employees2 + " сотрудников")
+  // console.log(" - " + enterprises[0].departments[2].name + ": " + employees3 + " сотрудников")
+  // console.log(enterprises[1].name + ": " + (employees4+employees5+employees6) + " сотрудников")
+  // console.log(" - " + enterprises[1].departments[0].name + ": " + employees4 + " сотрудников")
+  // console.log(" - " + enterprises[1].departments[1].name + ": " + employees5 + " сотрудников")
+  // console.log(" - " + enterprises[1].departments[2].name + ": " + employees6 + " сотрудников")
+  // console.log(enterprises[2].name + ": " + (employees7) + "сотрудников")
+  // console.log(" - " + enterprises[2].departments[0].name + ": " + employees7 + " сотрудников")
+
+  for (let i =0; i < enterprises.length; i++ ) {
+    console.log(enterprises[i].name + ": "  )
+
+    for (let j= 0; j < enterprises[i].departments.length; j++){
+      
+      console.log(" -" + enterprises[i].departments[j].name + ": " + enterprises[i].departments[j].employees_count + " сотрудников")
+    }
+   
+  }

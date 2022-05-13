@@ -78,12 +78,13 @@ const enterprises = [
   // console.log(enterprises[2].name + ": " + (employees7) + "сотрудников")
   // console.log(" - " + enterprises[2].departments[0].name + ": " + employees7 + " сотрудников")
 
-  for (let i =0; i < enterprises.length; i++ ) {
+
+  for (let i =0; i < enterprises.length; i++ ) { 
     console.log(enterprises[i].name + ": "  )
 
     for (let j= 0; j < enterprises[i].departments.length; j++){
-      
       console.log(" -" + enterprises[i].departments[j].name + ": " + enterprises[i].departments[j].employees_count + " сотрудников")
     }
-   
   }
+
+  

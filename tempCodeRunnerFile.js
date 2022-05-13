@@ -1,0 +1,1 @@
+return enterprise ? enterprise : "нет организации с таким отделом"

@@ -61,3 +61,18 @@ const enterprises = [
   ]
   
 
+
+const getEnterprisesName = function(value) {
+  let enterprise
+  enterprises.forEach(ent => {
+    let department
+    if (ent.departments) {
+      department = ent.departments.find(dept => {return dept.id == value || ent.name == value})
+    }
+    if(department) {
+      enterprise = ent;
+    }
+  });
+  return enterprise ? enterprise : "нет организации с таким отделом" 
+}
+console.log(getEnterprisesName(4))
